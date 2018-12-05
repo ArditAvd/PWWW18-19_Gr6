@@ -1,0 +1,65 @@
+/*HEADER*/
+body {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #1A1B1D;
+      color:white;
+      position: relative;
+      margin:0px;
+}
+a{
+      text-decoration: none; color: #D74341;
+}
+a:hover{
+      text-decoration:none; color: #934341;
+}
+ul li{ 
+      display: inline-block; 
+      padding: 10px;
+}
+.mainNavBar{
+      background-color: black; 
+      color:#626262; 
+      margin-top: -16px;
+      height: 50px; 
+}
+#mainNavBarLeft{
+      position: absolute;
+      left: -20px;
+      top: 5px; 
+}
+#mainNavBarRight{
+      position: absolute;
+      right: 20px;
+      top: 5px; 
+}
+.navBar{
+      height: 100px;
+      font-family: 'Courier New', Courier, monospace;
+}
+#molecularLogo{
+      position: absolute; 
+      left: 20px;
+}
+#navBarLinks{
+      position: absolute; 
+      text-align: end;
+      right: 30px;
+      top: 77px;
+}
+
+/*CONTAINER*/
+.container{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #626262;
+      background-color: white;
+}
+/*FOOTER*/
+#latestPosts{
+      width: 30%;
+}
+#contactDetails{
+      width: 30%;
+}
+#newsLetter{
+      width: 30%;
+}
