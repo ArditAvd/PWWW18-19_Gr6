@@ -1,5 +1,6 @@
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*HEADER*/
+/*--------------------------------------------------------------------------------------------------------------------*/
 body {
       font-family: 'Courier New', Courier, monospace;
       background-color: #1A1B1D;
@@ -37,14 +38,15 @@ ul li{
 }
 .molecularLogo{
       position: absolute; 
-      margin-top: 1.5em;
+      margin-top: 1.8em;
+      margin-left: 3em;
 }
 .navBarLinks{
       position: absolute; 
       float: right;
       text-align: center;
       right: 30px;
-      top: 77px;
+      top: 4em;
 }
 .navBarLinks ul li{
       border-right: 0.03em solid #626262;
@@ -65,8 +67,56 @@ ul li{
       height:0.6em; 
       background: #D74341 
 }
+      /*Dropdown menu------------------------------------------------------------------------------------------------*/
+ /* Style The Dropdown Button */
+.dropbtn {
+  background-color: #1A1B1D;
+  color: white;
+  padding: 16px;
+  font-size: 0.8em;
+  border: none;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 1.25em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 0.8em;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*CONTAINER*/
+/*--------------------------------------------------------------------------------------------------------------------*/
 .container{
       font-family: Georgia, 'Times New Roman', Times, serif;
       color: #626262;
@@ -81,6 +131,7 @@ button{
       height: 2em;
       border: none;
       color: #ffffff;
+      
 }
 .part1 blockquote{
       font-style: italic;
@@ -117,8 +168,16 @@ button{
       float: right;
       margin-top: -20%;
 }
+
+      /* StyleDemo container------------------------------------------------------------------------------------------*/
+.row div{
+      display: inline-block;
+      padding-right: 4em;
+      padding-left: 3em;
+}
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*FOOTER*/
+/*--------------------------------------------------------------------------------------------------------------------*/
 .footer{
       color:#626262; 
 }
@@ -155,4 +214,5 @@ input[type=text] {
       margin: 8px 0;
       background-color: #27282C;
       border: none;
-    }
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
