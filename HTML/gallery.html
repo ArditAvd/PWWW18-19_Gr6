@@ -78,6 +78,66 @@
 				<blockquote>"Develop a passion for learning. If you do, you will never cease to grow."</blockquote>
 				
 			</h1>
+			<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 9</div>
+  <img src="../Images/gallery1.jpg" style="width:100%; height:560px">
+  <div class="text">1. Take Effective Notes.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 9</div>
+  <img src="../Images/gallery2.jpg" style="width:100%; height:560px">
+  <div class="text">2. Practice, Practice, Practice…</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 9</div>
+  <img src="../Images/gallery3.jpg" style="width:100%; height:560px">
+  <div class="text">3. Manage Your Time.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 9</div>
+  <img src="../Images/gallery4.jpg" style="width:100%; height:560px">
+  <div class="text">4. Quickly test your knowledge</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 9</div>
+  <img src="../Images/gallery5.jpg" style="width:100%; height:560px">
+  <div class="text">5. Create a Study Plan.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 9</div>
+  <img src="../Images/gallery6.jpg" style="width:100%; height:560px">
+  <div class="text">6. Draw Diagrams.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 9</div>
+  <img src="../Images/gallery7.jpg" style="width:100%; height:560px">
+  <div class="text">7. Take Regular Study Breaks</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 9</div>
+  <img src="../Images/gallery8.jpg" style="width:100%; height:560px">
+  <div class="text">8. Don’t Stay Up All Night Before an Exam</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 9</div>
+  <img src="../Images/gallery9.png" style="width:100%; height:560px">
+  <div class="text">9. Study in a Group.</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
 			<hr>
 			<article>
 				<h4>1. Take Effective Notes.</h4>
@@ -105,7 +165,7 @@
 				
 			</article>
 			<article>
-				<h4>6. Draw Diagrams</h4>
+				<h4>6. Draw Diagrams.</h4>
 				<img src="../Images/gallery6.jpg" alt="Descritpion" width="400" height="300" >
 				
 			</article>
@@ -172,6 +232,35 @@
 		reserved.</p>
 	<p style="text-align:end; float: right; padding-right: 2em; color: #626262;">Template by Group VI</p>
 	<!--Footer ends here--------------------------------------------------------------------------------------->
+	
+	<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 </body>
 
 </html>
