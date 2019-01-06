@@ -33,7 +33,7 @@
 			<div class="navBarLinks">
 				<ul>
 					<li>
-						<a href="../index.html">HOMEPAGE</a>
+						<a href="index.html">HOMEPAGE</a>
 						<p>test text here</p>
 					</li>
 					<li>
@@ -79,6 +79,12 @@
 				<blockquote>"Develop a passion for learning. If you do, you will never cease to grow."</blockquote>
 				
 			</h1>
+	
+			<div class="part1" >
+			<button align="center" id="buttonhide">Hide/Show SlideShow</button>
+
+			</div>
+			<div id="slidesh">
 			<div class="slideshow-container" >
 
 <div class="mySlides fade">
@@ -133,6 +139,7 @@
   <div class="numbertext">9 / 9</div>
   <img src="../Images/gallery9.png" style="width:100%; height:560px">
   <div class="text">9. Study in a Group.</div>
+</div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -234,6 +241,15 @@
 	<!--Footer ends here--------------------------------------------------------------------------------------->
 	
 <script src="../JS/gallery.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#buttonhide").click(function(){
+    $("#slidesh").toggle();
+  });
+});
+</script>
 </body>
 
 </html>
