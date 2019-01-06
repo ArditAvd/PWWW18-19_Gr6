@@ -5,11 +5,12 @@
 	<meta charset="UTF-8">
 	<title>Gallery</title>
 	<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+	
 </head>
 
-<body>
+<body >
 	<!--Header------------------------------------------------------------------------------------------------>
-	<div class="Header">
+	<div class="Header" >
 		<div class="topHeader">
 			<div class="topHeaderLeft">
 				<ul>
@@ -70,15 +71,15 @@
 	<!--Header ends here----------------------------------------------------------------------------------------->
 
 	<!--Container------------------------------------------------------------------------------------------------>
-	<div class="container">
+	<div class="container" id="bodybg">
 		<div class="hrBlock">
 		</div>
-		<div class="part1">
+		<div class="part1" >
 			<h1>
 				<blockquote>"Develop a passion for learning. If you do, you will never cease to grow."</blockquote>
 				
 			</h1>
-			<div class="slideshow-container">
+			<div class="slideshow-container" >
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 9</div>
@@ -168,8 +169,7 @@
 				<h4>6. Draw Diagrams.</h4>
 				<img src="../Images/gallery6.jpg" alt="Descritpion" width="400" height="300" >
 				
-			</article>
-			
+			</article>			
 			<article>
 				<h4>7. Take Regular Study Breaks</h4>
 				<img src="../Images/gallery7.jpg" alt="Descritpion" width="400" height="300">
@@ -233,34 +233,7 @@
 	<p style="text-align:end; float: right; padding-right: 2em; color: #626262;">Template by Group VI</p>
 	<!--Footer ends here--------------------------------------------------------------------------------------->
 	
-	<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
+<script src="../JS/gallery.js"></script>
 </body>
 
 </html>
