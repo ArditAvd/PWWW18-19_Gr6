@@ -117,6 +117,9 @@ ul li{
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*CONTAINER*/
 /*--------------------------------------------------------------------------------------------------------------------*/
+*{
+  box-sizing: border-box;
+}
 .container{
       font-family: Georgia, 'Times New Roman', Times, serif;
       color: #626262;
@@ -153,22 +156,44 @@ button{
       height: 1.7em;
 }
 .part3{
+      overflow: auto;
+      position: relative;
       padding-block-end: 2em;
 }
 .part3-1{
       float:left; 
-      width:40%;
+      width:50%;
       text-align: justify;
       padding-block-end: 2em;
       padding-inline-end: 2em;
       height: 30%;
       padding-left:1em;
 }
-.article2{
-      float: right;
-      margin-top: -20%;
+.part3-2{
+  position: relative;
+  float: right;
+  width: 50%;
 }
-
+.part3-2 p{
+  margin-top: 0;
+  padding-left: 1px;
+}
+.part3-2 article{
+  float: left;
+}
+.article1{
+  width: 50%;
+  float: left;
+}
+.article1 img{
+  float: left;
+}
+.article2{
+  width: 50%;
+}
+.article2 img{
+float: left;
+}
       /* StyleDemo container------------------------------------------------------------------------------------------*/
 .row div{
       display: inline-block;
