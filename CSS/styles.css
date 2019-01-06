@@ -147,8 +147,11 @@ button{
       padding: 1em;
       margin-left: 3em;
 }
+.part2{
+   clear: left;
+}
 .part2 img{
-      margin: 3em;
+      margin-left: 9%;
 }
 .part2 button{
       background-color: #D74341;
@@ -166,17 +169,12 @@ button{
       text-align: justify;
       padding-block-end: 2em;
       padding-inline-end: 2em;
-      height: 30%;
       padding-left:1em;
 }
 .part3-2{
   position: relative;
   float: right;
   width: 50%;
-}
-.part3-2 p{
-  margin-top: 0;
-  padding-left: 1px;
 }
 .part3-2 article{
   float: left;
@@ -186,13 +184,15 @@ button{
   float: left;
 }
 .article1 img{
+  clear: left;
   float: left;
 }
 .article2{
   width: 50%;
 }
 .article2 img{
-float: left;
+  clear: left;
+  float: left;
 }
       /* StyleDemo container------------------------------------------------------------------------------------------*/
 .row div{
