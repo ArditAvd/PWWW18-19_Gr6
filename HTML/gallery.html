@@ -10,7 +10,7 @@
 
 <body >
 	<!--Header------------------------------------------------------------------------------------------------>
-	<div class="Header">
+	<div class="Header" >
 		<div class="topHeader">
 			<div class="topHeaderLeft">
 				<ul>
@@ -34,23 +34,23 @@
 				<ul>
 					<li>
 						<a href="../index.html">HOMEPAGE</a>
-						<p>Section 1</p>
+						<p>test text here</p>
 					</li>
 					<li>
 						<a href="styleDemo.html" style="color:white;">VIDEOS</a>
-						<p>Section 2</p>
+						<p>test text here</p>
 					</li>
 					<li>
 						<a href="fullWidth.html" style="color:white;">TIPS&ampTRICKS</a>
-						<p>Section 3</p>
+						<p>test text here</p>
 					</li>
 					<li>
 						<a href="portofolio.html" style="color:white;">BLOG</a>
-						<p>Section 4</p>
+						<p>test text here</p>
 					</li>
 					<li>
 						<a href="gallery.html" style="color:white;">GALLERY</a>
-						<p>Section 5</p>
+						<p>test text here</p>
 					</li>
 					<li>
 						<div class="dropdown">
@@ -62,7 +62,7 @@
 								<a href="gallery.html">GALLERY</a>
 							</div>
 						</div>
-						<p>Section 6</p>
+						<p>test text here</p>
 					</li>
 				</ul>
 			</div>
@@ -79,7 +79,8 @@
 				<blockquote>"Develop a passion for learning. If you do, you will never cease to grow."</blockquote>
 				
 			</h1>
-	
+			<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+	<div id="result"></div>
 			<div class="part1" >
 			<button align="center" id="buttonhide">Hide/Show SlideShow</button>
 
@@ -239,7 +240,20 @@
 		reserved.</p>
 	<p style="text-align:end; float: right; padding-right: 2em; color: #626262;">Template by Group VI</p>
 	<!--Footer ends here--------------------------------------------------------------------------------------->
-	
+	<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
 <script src="../JS/gallery.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
