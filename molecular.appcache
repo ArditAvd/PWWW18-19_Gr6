@@ -3,7 +3,7 @@ CACHE MANIFEST
  
 CACHE:
 # pages
-../index.html
+index.html
 ../gallery.html
 ../fullWidth.html
 ../portofolio.html
