@@ -8,7 +8,7 @@
 	
 </head>
 
-<body onclick="clickCounter()">
+<body>
 	<!--Header------------------------------------------------------------------------------------------------>
 	<div class="Header" >
 		<div class="topHeader">
@@ -74,20 +74,23 @@
 	<div class="container" id="bodybg">
 		<div class="hrBlock">
 		</div>
-		<div class="part1" >
-			<h1>
-				<blockquote id="result"></blockquote>
-				<blockquote>"Develop a passion for learning. If you do, you will never cease to grow."</blockquote>
-				
-			</h1>
-			
-	<div id="result"><p>test</p></div>
-			<div class="part1" >
-			<button align="center" id="buttonhide">Hide/Show SlideShow</button>
+		<div class="part1">
+		<h3 >
+		<blockquote id="result"></blockquote>
+		</h3>
+		<h1>
+			<blockquote>"Develop a passion for learning. If you do, you will never cease to grow."</blockquote>			
+		</h1>
+		<h3>
 
-			</div>
-			<div id="slidesh">
-			<div class="slideshow-container" >
+		<blockquote id="buttonhide" ><button>Hide/Show SlideShow</button></blockquote>
+		</h3>
+			
+			
+
+			
+<div id="slidesh">
+<div class="slideshow-container" >
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 9</div>
@@ -249,7 +252,7 @@ window.onload = function clickCounter() {
     } else {
       localStorage.clickcount = 1;
     }
-    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+    document.getElementById("result").innerHTML = "This page has been visited " + localStorage.clickcount + " time(s).";
   } else {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
   }
