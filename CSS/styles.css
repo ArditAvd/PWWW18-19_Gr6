@@ -117,6 +117,9 @@ ul li{
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*CONTAINER*/
 /*--------------------------------------------------------------------------------------------------------------------*/
+*{
+  box-sizing: border-box;
+}
 .container{
       font-family: Georgia, 'Times New Roman', Times, serif;
       color: #626262;
@@ -144,8 +147,11 @@ button{
       padding: 1em;
       margin-left: 3em;
 }
+.part2{
+   clear: left;
+}
 .part2 img{
-      margin: 3em;
+      margin-left: 9%;
 }
 .part2 button{
       background-color: #D74341;
@@ -188,7 +194,6 @@ button{
   clear: left;
   float: left;
 }
-
       /* StyleDemo container------------------------------------------------------------------------------------------*/
 .row div{
       display: inline-block;
@@ -203,12 +208,12 @@ button{
 }
 .latestPosts{
       float:left; 
-      width:28%;
+      width:33%;
       padding-left: 3em;
 }
 .contactDetails{
       float:left; 
-      width:28%;
+      width:33%;
       padding-left: 3em;
 }
 .contactDetails h2{
@@ -225,7 +230,7 @@ button{
 }
 .newsLetter{
       float:left; 
-      width:28%;
+      width:33%;
       padding-left: 3em;
 }
 input[type=text] {
