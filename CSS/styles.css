@@ -299,6 +299,14 @@ input[type=text] {
   top: 0;
 }
 /*FullWidth container*/
+svg{
+  float: left;
+}
+.fw-part1-right{
+  margin-top: -10px;
+  padding-left: 1em;
+  color: #1A1B1D;
+}
 table {
   width:100%;
 }
