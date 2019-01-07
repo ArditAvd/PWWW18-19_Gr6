@@ -273,4 +273,33 @@ input[type=text] {
   position: absolute;
   top: 0;
 }
-
+/*FullWidth container*/
+svg{
+  float: left;
+}
+.fw-part1-right{
+  margin-top: -10px;
+  padding-left: 1em;
+  color: #1A1B1D;
+}
+table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: #D74341;
+  color: white;
+}
