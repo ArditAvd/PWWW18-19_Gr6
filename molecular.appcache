@@ -1,0 +1,47 @@
+CACHE MANIFEST
+# v1.0 : 07-01-2019
+ 
+CACHE:
+# pages
+../index.html
+../gallery.html
+../fullWidth.html
+../portofolio.html
+../styleDemo.html
+
+ 
+# styles & scripts
+../style.css
+../gallery.js
+
+ 
+# images
+/Untitled.png
+../Images/gallery1.jpg
+../Images/gallery2.jpg
+../Images/gallery3.jpg
+../Images/gallery4.jpg
+../Images/gallery5.jpg
+../Images/gallery6.jpg
+../Images/gallery7.jpg
+../Images/gallery8.jpg
+../Images/gallery9.png
+
+../Images/index1 (1).jpg
+../Images/index1 (2).jpg
+../Images/index1 (3).jpg
+../Images/index2 (1).jpg
+../Images/index2 (2).jpg
+../Images/index2 (3).jpg
+../Images/index2 (4).jpg
+../Images/logo.jpg
+ 
+
+../Images/pic01.jpg
+../Images/pic02.jpg
+../Images/pic03.jpg
+ 
+# videos
+../Videos/video-1546871270.mp4
+FALLBACK:
+/ /offline.html
