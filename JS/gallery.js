@@ -10,7 +10,7 @@
         s.backgroundColor = f ? c1 : c2;
         s.color = f ? c4 : c3;
         f = !f;
-    }, 1500);
+    }, 3500);
 })();
 
 
